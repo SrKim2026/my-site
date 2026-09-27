@@ -204,6 +204,15 @@ iframe {
     box-shadow: 0 5px 15px #0005;
     margin: 10px 10px;
 }
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    .contents a {
+        flex: 0 0 calc((100% - 5px) / 2);
+    }
+}
 
 
 
