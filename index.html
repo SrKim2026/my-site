@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="referrer" content="strict-origin-when-cross-origin"> 
+    <title                         >Моя Шпаргалка HTML</title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <h1 class="title">ШПАРГАЛКИ ПО HTML</h1>
+
+        <h2 class="list">Содержание  сайта:</h2>
+
+        <div class="contents">
+        <a class="link" href="#Headings_and_lists" >1. Заголовки и списки</a>
+        <a class="link" href="#Text_formatting">2. Форматирование текста</a>
+        <a class="link" href="#links-and-buttons">3. Ссылки и кнопки</a>
+        <a class="link" href="#Image_and_video">4. Изображение и видео</a>
+        <a class="link" href="#Tags_and_quotes">5. Теги и цитаты</a>
+        <a class="link" href="#Media_content">6. Медиа контент</a>
+        <a class="link" href="#Tables">7. Таблицы</a>
+        <a class="link" href="#Forms_and_data_entry">8. Формы и ввод данных</a>
+        <a class="link" href="#Input_and_its_variations">8.1 Input и его вариации</a>
+        <a class="link" href="#Select_and_other_input_elements">8.2 Select и другие вводы</a>
+        <a class="link" href="#Semantic_tags">9. Семантические теги</a>
+        <a class="link" href="#Vector_graphics">10. Векторная графика</a>
+        <a class="link" href="#Global_and_current_attributes">11. Актуальные атрибуты</a>
+        <a class="link" href="css.html">Шпаргалка по CSS</a>
+        </div>
+
+    </header>
+
+
+    <main class="main">
+
+        <!-- ==================== 1. ЗАГОЛОВКИ И СПИСКИ ==================== -->
+
+        <br>
+
+        <section class="section">
+
+            <h2 id="Headings_and_lists">1. Заголовки и списки</h2>
+
+            <p class="paragraph">Теги (h1) – (h6) — разметка специальных заголовков разных уровней.</p>
+
+            <ul class="unordered-list">
+                <li>Тег (ul) — элемент маркированного списка (блочный).</li>
+                <li>Тег (li) — элемент списка (маркированного или нумерованного).</li>
+            </ul>
+
+            <ol class="ordered-list">
+                <li class="list-item">Тег (ol) — элемент нумерованного списка (блочный).</li>
+                <li class="list-item">Тег (li) — элемент списка.</li>
+            </ol>
+
+        </section>
+
+
+        <!-- ==================== 2. ФОРМАТИРОВАНИЕ ТЕКСТА ==================== -->
+
+        <section class="section">
+
+            <h2 id="Text_formatting">2. Форматирование текста</h2>
+
+            <p class="paragraph">Этот текст выделен <b>жирным (b / strong)</b>, <i>курсивом (i / em)</i>,<br><u>подчеркнутым (u)</u>, <s>зачеркнутым (s)</s> или <code>моноширинным (code)</code>.</p> 
+
+            <p class="paragraph">Чтобы сделать текст маленьким или выделенным фоном: <br><small>Дата моего рождения (small)</small>, <br><mark>очень важный текст (mark)</mark>.</p>
+
+            <p class="paragraph">Нижний и верхний индексы: <br>H<sub>2</sub>O <b>(sub)</b>, 2<sup>4</sup> <b>(sup)</b>. А также разделительная линия <b>(hr)</b>.</p>
+
+        </section>
+
+
+        <!-- ==================== 3. ССЫЛКИ И КНОПКИ ==================== -->
+
+        <section class="section">
+
+            <h2 id="links-and-buttons">3. Ссылки и кнопки</h2>
+
+            <p class="paragraph">Чтобы сделать элемент ссылкой, используют тег (a):<br>
+            нужно <a class="link" href="https://gist.github.com/dmitry-osin/4d50ec8316fb33552e9283f78a7162bb" target="_blank">использовать тег a</a> с атрибутами (href="...") и (target="_blank").</p>
+
+            <p class="paragraph">Также можно сделать <a class="link" href="#links-and-buttons">якорную ссылку</a> внутри страницы через атрибуты:<br> 
+            (href="#id_элемента") и (id="id_элемента").</p>
+
+            <p class="paragraph">Для скачивания файлов, отправки писем или звонков применяют атрибуты/схемы:<br> 
+            (download), (mailto:), (tel:).</p>
+
+            <p class="paragraph">Для создания интерактивных кнопок используют тег (button).</p>
+
+            <p class="paragraph"><b>Основные типы (type):</b></p>
+
+            <ul class="unordered-list">
+                <li class="list-item">(button) — кнопка по умолчанию для обычных скриптов.</li>
+                <li class="list-item">(submit) — отправка данных формы на сервер.</li>
+                <li class="list-item">(reset) — сброс введенных данных в форме.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- ==================== 4. ИЗОБРАЖЕНИЕ И ВИДЕО ==================== -->
+
+        <section class="section">
+
+            <h2 id="Image_and_video">4. Изображение и видео</h2>
+
+            <p class="paragraph">Для добавления фото и видео используются теги (img) и (video) с атрибутами:<br>
+            (src="...") (путь к файлу) и (loading="lazy") (ленивая загрузка).</p>
+
+            <p class="paragraph">Текстовое описание задается через (alt="..."), а размеры — через (width="...") и (height="...").</p>
+
+            <img class="image" src="./images/OIP.jpg" alt="Изображение помощь по созданию HTML страницы" width="500" height="280" loading="lazy">
+
+        </section>
+
+
+        <!-- ==================== 5. ТЕГИ И ЦИТАТЫ ==================== -->
+
+        <section class="section">
+
+            <h2 id="Tags_and_quotes">5. Теги и цитаты</h2>
+
+            <blockquote cite="https://www.w3schools.com/html/html_blocks.asp" class="blockquote">
+                <p class="paragraph">Для выдержки блочных цитат используется тег <br><b>(blockquote)</b>, а для указывания источника/автора — тег <b>(cite)</b>.</p>
+            </blockquote>
+
+            <p class="paragraph">Тег <b>(q)</b> используется для создания <q cite="...">короткой строчной цитаты</q> внутри текста.</p>
+
+        </section>
+
+
+        <!-- ==================== 6. МЕДИА КОНТЕНТ ==================== -->
+
+        <section class="section">
+
+            <h2 id="Media_content">6. Медиа контент</h2>
+
+            <p class="paragraph">Для воспроизведения звука и видео нужны теги <b>(audio)</b> / <b>(video)</b> с атрибутом <b>(controls)</b>.</p>
+
+            <p class="paragraph">Вложенный тег <b>(source)</b> с атрибутом <b>(type="...")</b> позволяет подключить разные форматы медиафайлов.</p>
+
+            <p class="paragraph">Атрибуты <b>(autoplay)</b> (автостарт), <b>(muted)</b> (без звука) и <b>(loop)</b> (повтор) управляют воспроизведением.</p>
+
+            <p class="paragraph">Атрибут <b>(playsinline)</b> внутри тега <b>(video)</b> разворачивает на весь экран у мобильных устройств.</p>
+
+            <p class="paragraph">Тег <b>(iframe)</b> — встройка стороннего веб-контента (карт, видео, других сайтов):</p>
+
+            <iframe class="iframe" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.2922926156743895!3d48.85837367928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2s!4v1640000000000!5m2!1sen!2s" 
+                width="560" 
+                height="315" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+
+        </section>
+
+
+        <!-- ==================== 7. ТАБЛИЦЫ ==================== -->
+
+        <section class="section">
+
+            <h2 id="Tables">7. Таблицы</h2>
+
+            <p class="paragraph">Тег <b>(table)</b> создает таблицу, <b>(tr)</b> — строку, <br><b>(th)</b> — заголовочную ячейку, а <b>(td)</b> — обычную ячейку с данными.</p>
+
+            <p class="paragraph">Тег <b>(caption)</b> задает название таблицы, <b>(thead)</b> группирует шапку, <br><b>(tbody)</b> — тело, а <b>(tfoot)</b> — подвал таблицы.</p>
+
+            <p class="paragraph">Атрибуты <b>(colspan="...")</b> и <b>(rowspan="...")</b> объединяют ячейки <br>по горизонтали и вертикали соответственно.</p>
+
+            <table *border*="1" class="table">
+
+                <caption class="caption">Пример таблицы:</caption>
+
+                <thead>
+                    <tr>
+                        <th>Номер</th>
+                        <th>За день: %</th>
+                        <th>За неделю: %</th>
+                        <th>За месяц: %</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>1%</td>
+                        <td>7%</td>
+                        <td>30%</td>
+                    </tr>
+
+                    <tr>
+                        <th>2</th>
+                        <td>2%</td>
+                        <td>14%</td>
+                        <td>60%</td>
+                    </tr>
+
+                    <tr>
+                        <th>3</th>
+                        <td>3%</td>
+                        <td>21%</td>
+                        <td>90%</td>
+                    </tr>
+
+                    <tr>
+                        <th>4</th>
+                        <td>4%</td>
+                        <td>28%</td>
+                        <td>100%</td>
+                    </tr>
+
+                    <tr>
+                        <th>Всего %:</th>
+                        <td>10%</td>
+                        <td>70%</td>
+                        <td>280%</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th>Итог:</th>
+                        <td colspan="3" style="text-align: center;">Ты станешь лучше всего за пару месяцев</td>
+                    </tr> 
+                </tfoot>
+
+            </table>
+
+        </section>
+
+
+        <!-- ==================== 8. ФОРМЫ И ВВОД ДАННЫХ ==================== -->
+
+        <section class="section">
+
+            <h2 id="Forms_and_data_entry">8. Формы и ввод данных</h2>
+
+            <p class="paragraph">Тег <b>(form)</b> используется для объединения всех <br>элементов ввода информации и отправки их на сервер.</p>
+
+            <p class="paragraph">Тег <b>(fieldset)</b> используется для визуальной группировки элементов <br>формы, а тег <b>(legend)</b> задает заголовок для этой группы.</p>
+
+            <p class="paragraph">Тег <b>(label)</b> используется для создания текстовых меток <br>к элементам формы (связывается с полем через атрибуты <b>for</b> и <b>id</b>).</p>
+
+            <p class="paragraph">Тег <b>(input)</b> используется для создания различных полей ввода данных.</p>
+
+            <p class="paragraph">Очень важный атрибут для input — <b>(type)</b>, который определяет тип поля ввода.</p>
+
+            <p class="paragraph">Атрибут <b>required</b> указывает, что поле обязательно для заполнения перед отправкой формы.</p>
+
+        </section>
+
+
+        <!-- ==================== 8.1 INPUT И ЕГО ВАРИАЦИИ ==================== -->
+
+        <section class="section">
+
+            <h2 id="Input_and_its_variations">8.1 Input и его вариации</h2>
+
+            <p class="paragraph">У полей ввода есть вспомогательные атрибуты: <b>id</b> (для связи с label) <br>и <b>name</b> (определяет имя поля для распознавания данных на сервере).</p>
+
+            <p class="paragraph">В атрибуте <b>type</b> доступно множество вариантов:<br>
+            (<b>email</b>, <b>text</b>, <b>password</b>, <b>url</b>, <b>tel</b>, <b>search</b>, <b>date</b>, <b>color</b>, <b>file</b>, <b>checkbox</b>, <b>radio</b>, <b>range</b>, <b>number</b>) и т.д.</p>
+
+            <form class="form">
+
+                <fieldset class="fieldset">
+
+                    <legend class="legend">Регистрация / Вход</legend>
+
+                    <p><small>* Обязательные поля для заполнения</small></p>
+
+                    <label class="label" for="username">Имя пользователя *:</label><br>
+                    <input class="input" type="text" id="username" name="username" required><br><br>
+
+                    <label class="label" for="email">Электронная почта *:</label><br>
+                    <input class="input" type="email" id="email" name="email" required><br><br>
+
+                    <label class="label" for="password">Пароль *:</label><br>
+                    <input class="input" type="password" id="password" name="password" required><br><br>
+
+                    <label class="label" for="user-profile">Ссылка на профиль (необязательно):</label><br>
+                    <input class="input" type="url" id="user-profile" name="user-profile"><br><br>
+
+                    <label class="label" for="tel">Телефон:</label><br>
+                    <input class="input" type="tel" id="tel" name="tel"><br><br>
+
+                    <label class="label" for="search">Введите поисковый запрос:</label><br>
+                    <input class="input" type="search" id="search" name="search"><br><br>
+
+                    <label class="label" for="age">Ваш возраст:</label><br>
+                    <input class="input" type="number" id="age" name="age" min="0"><br><br>
+
+                    <label class="label" for="date">Дата рождения (ДД.ММ.ГГГГ):</label><br>
+                    <input class="input" type="date" id="date" name="date"><br><br>
+
+                    <button class="button" type="submit">Зарегистрироваться</button>
+
+                </fieldset>
+
+            </form>
+
+            <form class="form">
+
+                <fieldset class="fieldset">
+
+                    <legend class="legend">Выберите характеристики:</legend>
+
+                    <label class="label" for="color">Выберите цвет:</label><br>
+                    <input class="input1" type="color" id="color" name="color"><br><br>
+
+                    <label class="label" for="file">Загрузить файл:</label><br>
+                    <input class="input1" type="file" id="file" name="file" multiple><br><br>
+
+                    <p><b>Укажите ваш пол:</b></p>
+
+                    <input class="input" type="radio" id="male" name="gender" value="male" required>
+                    <label class="label1" for="male">Мужской</label><br>
+
+                    <input class="input" type="radio" id="female" name="gender" value="female" required>
+                    <label class="label1" for="female">Женский</label><br><br>
+
+                    <label class="label" for="range">Громкость звука:</label><br>
+                    <input class="input1" type="range" id="range" name="range" min="0" max="100" value="0"><br><br>
+
+                    <input class="input" type="checkbox" id="checkbox" name="checkbox" required>
+                    <label class="label1" for="checkbox">Я согласен со всеми условиями пользования</label><br><br>
+
+                    <button class="button" type="submit">Сохранить</button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+
+        <!-- ==================== 8.2 SELECT И ДРУГИЕ ЭЛЕМЕНТЫ ВВОДА ==================== -->
+
+        <section class="section">
+
+            <h2 id="Select_and_other_input_elements">8.2 Select и другие элементы ввода</h2>
+
+            <p class="paragraph">Тег <b>(select)</b> используется для создания выпадающего списка. <br>Вложенный тег <b>(option)</b> определяет варианты выбора.</p>
+
+            <p class="paragraph">Тег <b>(optgroup)</b> с атрибутом <b>label</b> используется <br>для группировки похожих опций внутри списка.</p>
+
+            <p class="paragraph">Тег <b>(textarea)</b> создает многострочное поле <br>для ввода произвольного текста.</p>
+
+            <p class="paragraph">Атрибут <b>disabled</b> делает элемент неактивным для выбора, <br>а <b>selected</b> выбирает пункт по умолчанию.</p>
+
+            <p class="paragraph"><b>Полезные атрибуты для полей ввода:</b></p>
+
+            <ul class="unordered-list">
+                <li class="list-item"><b>placeholder</b> — текстовая подсказка внутри пустого поля.</li>
+                <li class="list-item"><b>readonly</b> — делает поле доступным только для чтения (нельзя редактировать).</li>
+                <li class="list-item"><b>autofocus</b> — автоматически устанавливает курсор в поле при загрузке страницы.</li>
+                <li class="list-item"><b>autocomplete="on/off"</b> — включает или отключает автозаполнение браузером.</li>
+                <li class="list-item"><b>minlength / maxlength</b> — задает минимальную и максимальную длину вводимого текста.</li>
+                <li class="list-item"><b>rows / cols</b> — задают количество строк и столбцов в теге <code>textarea</code>.</li>
+                <li class="list-item"><b>inputmode</b> — выбирает вид мобильной клавиатуры (numeric, tel, decimal, url).</li>
+                <li class="list-item"><b>pattern</b> — задает регулярное выражение для проверки правильности ввода.</li>
+                <li class="list-item"><b>spellcheck="true/false"</b> — включает или отключает проверку орфографии.</li>
+            </ul>
+
+            <form class="form">
+
+                <fieldset class="fieldset">
+
+                    <legend class="legend">Дополнительные настройки</legend>
+
+                    <label class="label" for="language">Выберите язык:</label><br>
+
+                    <select class="select" id="language" name="language">
+
+                        <optgroup class="optgroup" label="Европейские языки"> 
+                            <option value="english">Английский</option>     
+                            <option value="french">Французский</option>
+                            <option value="german">Немецкий</option>
+                            <option value="russian" selected>Русский</option>
+                            <option value="spanish">Испанский</option>
+                            <option value="italian">Итальянский</option>
+                        </optgroup>
+
+                        <optgroup class="optgroup" label="Азиатские языки">
+                            <option value="japanese">Японский</option>
+                            <option value="chinese">Китайский</option>
+                            <option value="korean">Корейский</option>
+                            <option value="hindi">Хинди</option>
+                            <option value="arabic">Арабский</option>
+                            <option value="turkish">Турецкий</option>
+                        </optgroup>
+
+                    </select><br><br>
+
+                    <label class="label" for="comment">Ваш комментарий:</label><br>
+
+                    <textarea class="textarea" id="comment" name="comment" rows="4" cols="50" placeholder="Оставьте ваш отзыв здесь..." spellcheck="true" required></textarea><br><br>
+
+                    <button type="submit" class="button">Отправить данные</button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+
+        <!-- ==================== 9. СЕМАНТИЧЕСКИЕ ТЕГИ ==================== -->
+
+        <section class="section">
+
+            <h2 id="Semantic_tags">9. Семантические теги</h2>
+
+            <p class="paragraph">Тег <b>(header)</b> представляет собой группу, объединяющую шапку документа (верхушку сайта).</p>
+
+            <p class="paragraph">Тег <b>(footer)</b> представляет собой группу, объединяющую подвал документа (низ сайта).</p>
+
+            <p class="paragraph">Тег <b>(main)</b> представляет собой уникальное основное содержание документа.</p>
+
+            <p class="paragraph">Тег <b>(section)</b> представляет собой смысловой раздел документа с обязательным использованием заголовков.</p>
+
+            <p class="paragraph">Тег <b>(article)</b> представляет собой независимую часть содержания, которая имеет смысл сама по себе (например, новость или статья).</p>
+
+            <p class="paragraph">Тег <b>(aside)</b> представляет собой боковую панель или дополнительный блок с косвенным содержанием.</p>
+
+            <p class="paragraph">Тег <b>(nav)</b> представляет собой блок навигационных ссылок по сайту.</p>
+
+        </section>
+
+
+        <!-- ==================== 10. ВЕКТОРНАЯ ГРАФИКА ==================== -->
+
+        <section class="section">
+
+            <h2 id="Vector_graphics">10. Векторная графика</h2>
+
+            <p class="paragraph">Тег <b>(svg)</b> используется для создания и контейнеризации векторной графики.</p>
+
+            <p class="paragraph">Вспомогательные теги внутри SVG: <br><b>(circle)</b> — для кругов, <br><b>(polyline)</b> — для ломаных линий, <br><b>(path)</b> — для сложных линий и кривых.</p>
+
+            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#3498db" />
+                <polyline points="30,52 43,65 70,38" fill="none" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+        </section>
+
+
+        <!-- ==================== 11. ГЛОБАЛЬНЫЕ И АКТУАЛЬНЫЕ АТРИБУТЫ ==================== -->
+
+        <section class="section">
+
+            <h2 id="Global_and_current_attributes">11. Глобальные и актуальные атрибуты</h2>
+
+            <p class="paragraph">Глобальные атрибуты — это параметры, которые можно применить практически к любому HTML-тегу:</p>
+
+            <ul class="unordered-list">
+                <li class="list-item"><b>class</b> — определяет имя класса для групповой стилизации элементов через CSS.</li>
+                <li class="list-item"><b>id</b> — определяет уникальный идентификатор конкретного элемента на странице.</li>
+                <li class="list-item"><b>title</b> — создает всплывающую текстовую подсказку при наведении мышкой.</li>
+                <li class="list-item"><b>hidden</b> — полностью скрывает элемент со страницы.</li>
+                <li class="list-item"><b>tabindex</b> — определяет порядок перехода по элементам с помощью клавиши Tab.</li>
+                <li class="list-item"><b>lang</b> — определяет язык содержимого внутри элемента.</li>
+                <li class="list-item"><b>contenteditable</b> — делает содержимое элемента редактируемым прямо на странице.</li>
+                <li class="list-item"><b>style</b> — задает прямые (встроенные) CSS-стили для элемента.</li>
+                <li class="list-item"><b>data-*</b> — используется для создания собственных пользовательских атрибутов.</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <br>
+
+        <p class="paragraph">© 2026 Моя Шпаргалка HTML. Все права защищены.</p><br>
+
+        <a href="css.html">Шпаргалка по CSS</a>
+
+    </footer> 
+
+</body>
+
+</html>
