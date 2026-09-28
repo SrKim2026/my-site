@@ -206,12 +206,37 @@ iframe {
 }
 @media (max-width: 600px) {
     .section {
-        margin-left: 8px;
-        margin-right: 8px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .contents {
-        margin: 0 3px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .contents a {
+        flex: 0 0 calc((100% - 5px) / 2);
+    }
+
+    img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        margin: 8px auto;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        margin: 10px 0;
+    }
+
+    textarea {
+        width: 100%;
+        max-width: 100%;
     }
 }
 
